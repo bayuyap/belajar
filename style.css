@@ -1,0 +1,197 @@
+.header {
+	width: 1000px;
+	height: 200px;
+	margin : 0 auto;
+	background: url(../image/impulse2.jpg) ;
+}
+.text-header{
+    width: 1000px;
+    height: 40px;
+    margin: 0 auto;
+    color: aqua;
+    margin-bottom: 15px;
+    line-height: 40px;
+    font-size: 50px;
+    text-decoration: none;
+    background: Yellow;
+}
+.nav{
+	width:1000px;
+	height:40px;
+	margin:0 auto;
+	background: yellow;
+    line-height: 40px;
+    margin-bottom: 10px;
+}
+.nav ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+.nav ul ul{
+    display: none;
+    position: absolute;
+    margin-top: 40px;
+    width: 150px;
+}
+.nav ul li{
+    float: left;
+}
+.nav ul ul li a{
+    width: 200px;
+    text-align: left;
+    background: green;
+    border-radius: 20px;
+    border: 2px white solid;
+    padding-left: 30px;
+}
+.nav ul li:hover ul{
+    display: block;
+    animation:mantul 1s;
+}
+@keyframes mantul{
+    0%{
+        margin-top: 0px; opacity: 0;
+    }
+    75%{
+        margin-top: 50px; opacity: .5;
+    }
+    100%{
+        margin-top: 40px; opacity: 1;
+    }
+}
+.nav ul li a{
+    float: left;
+    width: 150px;
+    text-align: center;
+    color: red;
+    text-decoration: none;
+    text-transform: uppercase;
+    background: darkred;
+}
+.nav ul li a:hover{
+    background: gold;
+    transition: 1s;
+}
+.benteng{
+	width:1000px;
+	height:auto;
+	margin: 0 auto;
+}
+.sidebar{
+	width:200px;
+	height:auto;
+	background: red;
+	float :left;
+}
+.judul_ping {
+    width: 100%;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    background: orange;
+    color: white;
+    text-shadow: black;
+    border-bottom: 2px white solid;
+    text-align: center;
+}
+.text_sidebar ul{
+    list-style: none;
+    padding: 0;
+}
+.text_sidebar ul li{
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    color: black;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px white solid;
+}
+.text_sidebar ul li a{
+    color: black;
+    text-decoration:none;
+}
+.text_sidebar ul li a:hover{
+    text-decoration: underline;
+}
+.konten{
+	width:800px;
+	height:auto;
+	background:green;
+	float: left;
+}
+.text_konten{
+    width: 95%;
+    margin: 0 auto;
+    padding: 10px 0 10px 0;
+}
+.footer{
+	width:1000px;
+	height:100px;
+	margin:auto;
+	background:orange;
+}
+.text-footer{
+    padding: 15px 20px 10px 20px;
+    width: 970px;
+    height: 80px;
+    column-rule: 2px solid white;
+    column-count: 3;
+    column-width: 100px;
+    color: white;
+}
+.galery{
+	width:30%;
+	height:auto;
+	border:1px grey dashed;
+	float:left;
+}
+.galery img{
+    width: 94%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left:3%;
+    padding-right: 3%;
+}
+.frame_gambar{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(151,140,140,0.3);
+    display: none;
+}
+.popup{
+    position: relative;
+    max-width: 500px;
+    padding: 10px;
+    background: none;
+    border-radius: 10px;
+    animation: animatetop 1s;
+
+/* tambahkan efek animasi */
+@-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+
+@keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:0; opacity:1}
+}
+/* style untuk tombol close */
+.close {
+	margin-top: 7px;
+    color: blue;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+.close:hover, .close:focus {
+    color: yellow;
+    text-decoration: none;
+    cursor: pointer;
+}
+.popup img{
+    width: 95%;
+}

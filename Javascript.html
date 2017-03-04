@@ -1,0 +1,29 @@
+ <div id="tampil"></div>
+ <div id="tampil2"></div>
+
+angka ke 1 <input type="number" size="20" id="angka1"><br>
+angka ke 2 <input type="number" size="20" id="angka2"><br>
+<button id="proses">Proses</button>
+<script language="Javascript" type="text/javascript">
+    
+    var a;
+    var b;
+    var hasil;
+    
+    a = 3;
+    b = 10;
+    hasil = a+b;
+   
+    //document.write('hasil dari angka ' + a +' ditambah ' + b +' adalah = ' + hasil);
+    document.getElementById("tampil").innerHTML ='<h2> hasil dari angka ' + a +' ditambah ' + b +' adalah = ' + hasil + '</h2>';
+    alert("ini tampil");
+    
+    var c=document.getElementById('angka1');
+    var d=document.getElementById('angka2');
+    var e=document.getElementById('proses');
+    
+    e.onclick = function() {
+        var hasil2= c*d;
+        document.getElementById('tampil2').innerHTML=hasil2;
+    }
+</script>
